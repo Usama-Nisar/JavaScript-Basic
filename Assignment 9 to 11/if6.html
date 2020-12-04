@@ -1,0 +1,47 @@
+<html>
+    <script>
+    var mark1 = prompt("Enter first subject mark");
+    var mark2 = prompt("Enter second subject mark");
+    var mark3 = prompt("Enter third subject mark");
+    var mark01 = parseInt(mark1); 
+    var mark02 = parseInt(mark2);
+    var mark03 = parseInt(mark3);
+    var total1 = prompt("Enter total marks");
+    var total01 = parseInt(total1);
+    var totalobt = mark01 + mark02 + mark03;
+    var per = (totalobt / total01) * 100;
+
+           document.write("<b>Marks Sheet</b>");
+           document.write("</br>");
+           document.write("Total Marks     : "+total01);
+           document.write("</br>");
+           document.write("Obtained Marks  : "+totalobt);
+           document.write("</br>");
+           document.write("Percentage      : "+per+"%");
+           document.write("</br>");
+           if(per>=80)
+             {
+           document.write("Grade           :  A1")      
+           document.write("</br>");
+           document.write("Remarks         :  Excellent");
+             }
+           else if(per>=70 && per<80)
+             {
+           document.write("Grade           :  A")
+           document.write("</br>");      
+           document.write("Remarks         :  Good");
+             }   
+           else if(per>=60 && per<70)
+             {
+           document.write("Grade           :  B")
+           document.write("</br>");      
+           document.write("Remarks         :  You need to improve");      
+             }
+           else
+             {
+           document.write("Grade           :  Fail")
+           document.write("</br>");           
+           document.write("Remarks         :  Sorry");
+             }  
+    </script>
+</html>

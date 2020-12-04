@@ -1,0 +1,53 @@
+<html>
+    <head>
+    <style>
+    table {
+              text-align: center;
+              width: 600px;
+              border-collapse: collapse;
+              
+          }
+    th    {
+              background-color: cornflowerblue;
+             
+          }  
+    td    {
+              background-color: lightblue;
+          }    
+    
+    </style>
+
+    </head>
+    <body>
+    <script>
+    var sub1 = prompt("Enter first subject");
+    var sub2 = prompt("Enter second subject");
+    var sub3 = prompt("Enter third subject");
+    var marks1 = prompt("Enter first subject marks");
+    var marks01 = parseInt(marks1);
+    var marks2 = prompt("Enter second subject marks");
+    var marks02 = parseInt(marks2);
+    var marks3 = prompt("Enter third subject marks");
+    var marks03 = parseInt(marks3);
+    var outof = 100;
+    var per1 = (marks1 * 100) / outof;
+    var per2 = (marks2 * 100) / outof;
+    var per3 = (marks3 * 100) / outof;
+    var total = 300;
+    var totalMarks = marks01+marks02+marks03;
+    var totalper = (per1 + per2 + per3) / 3;
+     
+    document.write("<table border=1 >" + "<tr>" + "<th>" + "Subject" + "</th>" + "<th>" + "Total Marks" + "</th>" + 
+                    "<th>" + "Obtained Marks" + "</th>" + "<th>" + "Percentage" + "</th>" + "</tr>"  +  
+                    "<tr>" + "<td>" + sub1 + "</td>" + "<td>" + outof + "</td>" +
+                    "<td>" + marks1 + "</td>" + "<td>" + per1 +"%" + "</td>" + "</tr>" + 
+                    "<tr>" + "<td>" + sub2 + "</td>" + "<td>" + outof + "</td>" +
+                    "<td>" + marks2 + "</td>" + "<td>" + per2 + "%" + "</td>" + "</tr>" +
+                    "<tr>" + "<td>" + sub3 + "</td>" + "<td>" + outof + "</td>" +
+                    "<td>" + marks3 + "</td>" + "<td>" + per3 + "%" + "</td>" + "</tr>" +   
+                    "<td>" + "</td>" + "<td>" + total + "</td>" + "<td>" + totalMarks + "</td>" +
+                    "<td>" + totalper + "%" + "</td>" +
+                    "</table>")
+    </script>
+    </body>
+</html>

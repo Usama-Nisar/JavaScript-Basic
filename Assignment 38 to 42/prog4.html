@@ -1,0 +1,24 @@
+<html>
+    <script>
+    function subMark(a,b,c){
+         var a = prompt("Enter first subject mark");
+         var a1 = parseInt(a);
+         var b = prompt("Enter subject subject mark");
+         var b1 = parseInt(b);
+         var c = prompt("Enter third subject mark");
+         var c1 = parseInt(c);
+         average(a,b,c);
+         percentage(a,b,c);
+    }
+    function average(a,b,c){
+        var ave = a+b+c/3;
+        alert("Average = "+ave);
+    }
+    function percentage(a1,b1,c1){
+        var obt = a1+b1+c1;
+        var per = (obt/300)*100;
+        alert("Percentage is ="+per); 
+    }
+    subMark(a1,b1,c1);
+    </script>
+</html>
