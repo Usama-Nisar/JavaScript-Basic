@@ -1,0 +1,38 @@
+
+
+
+
+<script>
+  
+
+  
+//   const person1 = (Friend) => {
+//       console.log(`I am busy right now with now with ${Friend}, I will call you later`)
+//   }
+
+//   const person2 = () => {
+//     console.log(`I call you back ok....`)
+// }
+
+// person1("Usama")
+// person2()
+
+
+
+
+const person1 = (Friend,secondPerson) => {
+      console.log(`I am busy right now with now with ${Friend}, I will call you later`);
+      secondPerson();
+  }
+
+  const person2 = () => {
+    console.log(`I call you back ok....`)
+}
+
+person1("Usama",person2)
+
+// output
+// first   person1() function run and complete, than person2() call
+
+  
+</script>

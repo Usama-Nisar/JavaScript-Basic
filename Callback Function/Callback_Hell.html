@@ -1,0 +1,41 @@
+
+
+
+<script>
+
+    const greetingPrint = (msg, greeting) => {
+       if(msg === 'moring'){
+           Morining(greeting)
+       }
+       else if (msg === 'evening'){
+           Evening(greeting)
+       }
+       else{
+           Night(greeting)
+       }
+    }
+
+
+
+    const Morining = (greeting) => {
+        console.log('Good Morning')
+    }
+
+
+    const Evening = (greeting) => {
+        console.log('Good Evening')
+    }
+
+    const Night = (greeting) => {
+        console.log('Good Night ')
+    }
+
+    const greeting = (msg) => {
+        console.log(msg)
+    }
+
+    greetingPrint('evening', greeting);
+
+
+
+</script>

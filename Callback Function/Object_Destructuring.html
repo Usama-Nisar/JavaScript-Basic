@@ -1,0 +1,31 @@
+
+
+
+
+
+<script>
+    const person = {
+        name : 'Usama',
+        age : 20, 
+        data:{
+            a: 10,
+            b: 11
+        }
+    }
+
+    // const show = ({name,age}) => {
+    //       console.log(`My name is ${name} and I am ${age} years old`)
+    // }
+
+    // show(person)
+
+
+     const show = ({name,age, data:{a,b}}) => {
+          console.log(`My name is ${name} and I am ${age} years old value of a is ${a} and b is ${b}`)
+                       
+    }
+
+    show(person)
+
+
+</script>
